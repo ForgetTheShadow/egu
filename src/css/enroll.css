@@ -1,0 +1,140 @@
+.ceroll-bg{
+
+}
+.ceroll-bg img{
+    width: 100%;
+    height: 100%;
+}
+.ceroll-main{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    height: 540px;
+    margin-top: -270px;
+    margin-left: -230px;
+    text-align: center;
+    z-index: -1;
+    background: #fff;
+}
+.ceroll-nr{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    height: 540px;
+    margin-top: -270px;
+    margin-left: -230px;
+    z-index: 99;
+    color: #333;
+    background-color: #fff;
+}
+.ceroll-nr ul{
+        width: 380px;
+    margin: 10px 40px 10px 40px;
+}
+.ceroll-nr ul:nth-child(1) li img{
+    padding-top:2px;
+}
+.ceroll-b{
+    height: 30px;
+}
+.ceroll-b b{
+    height: 30px;
+    line-height: 30px;
+    font-size:30px;
+}
+.ceroll-b span{
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 30px;
+}
+.ceroll-b2{
+
+}
+.ceroll-nr i{
+    padding: 11px 15px;
+    width: 25px;
+    font-weight: 100;
+    line-height: 30px;
+    height: 30px;
+    background: #aaa;
+}
+.ceroll-nr input{
+    height: 30px;
+    line-height: 30px;
+    color: #c9c9c9;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #dedede;
+    background: none;
+}
+.enroll-ko{
+    height: 24px;
+}
+.ceroll-b3{
+
+}
+.ceroll-b3 input{
+        height: 30px;
+    line-height: 30px;
+    color: #c9c9c9;
+    font-size: 16px;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #dedede;
+    background: none;
+}
+.ceroll-b3 button{
+        width: 120px;
+    margin-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    color: #c9c9c9;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff7400;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.ceroll-b4{
+
+}
+.squaredr{
+    font-size: 16px;
+    position: relative;
+    top: 6px;
+}
+.ceroll-b5 h2{
+        font-size: 16px;
+    padding: 0px 5px;
+    /*padding-left: 30px;*/
+    margin: 5px 0px;
+    float:left;
+}
+.ceroll-b5 input{
+    width: 13px;
+    height: 13px;
+        font-size: 12px;
+    /*margin-top: 15px;    */
+    padding:0;
+}
+.ceroll-b5 a{
+        border-bottom: #000 1px solid;
+    font-size: 16px;
+    font-weight: 600;
+}
+.logo-nr-b6{
+    height: 54px;
+    width: 380px;
+}
+.logo-nr-b6  button{
+    background-color:  #fd7400;
+    font-size: 20px;
+    width: 380px;
+    height: 54px;
+    line-height: 54px;
+
+}
