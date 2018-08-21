@@ -1,0 +1,138 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.logo-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    height: 540px;
+    margin-top: -270px;
+    margin-left: -230px;
+    text-align: center;
+    z-index: -1;
+    /*filter: alpha(opacity:30);*/
+    opacity: 0.3;
+    background: #333;
+}
+.logo-nr{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    height: 540px;
+    margin-top: -270px;
+    margin-left: -230px;
+    z-index: 99;
+    color: #fff;
+}
+.logo-nr ul{
+        width: 380px;
+    float: left;
+    margin: 10px 40px 10px 40px;
+}
+.logo-nr ul li{
+        width: 380px;
+        margin-bottom: 10px;
+}
+.logo-nr ul li a{
+        color: #fd7400;
+    font-size: 16px;
+}
+.logo-nr-b{
+    
+}
+.logo-nr-b h2{
+    font-weight: bold;
+    font-size:24px;
+}
+.logo-nr-b span{
+    font-size: 16px;
+    line-height: 30px;
+}
+.logo-nr strong{
+    padding: 11px 15px;
+    width: 25px;
+    font-weight: 100;
+    line-height: 30px;
+    height: 30px;
+    background: #aaa;
+}
+.name-s{
+    height: 30px;
+    line-height: 30px;
+    color: #c9c9c9;
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #dedede;
+}
+
+.logo-nr-b2{
+
+}
+.logo-nr-b2 h2{
+    float:left;
+    line-height: 30px;
+    font-size: 16px;
+    padding-top:12px;
+    padding-right: 10px;
+}
+.yzm-s{
+         float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #c9c9c9;
+    font-size: 16px;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #dedede;
+   /* background: url(../images/login_right.png) right -35px no-repeat #fff;*/
+}
+
+.two{
+    margin: 5px 0px;
+    float: left;
+    position: relative;
+}
+.logo-nr-b3 h2{
+    float:left;
+        color: #fff;
+    font-size: 16px;
+    padding: 0px 5px;
+    margin: 5px 0px;
+}
+.logo-nr-b3 span{
+         float: right; 
+    text-align: right;
+    font-size: 16px;
+    line-height: 30px;
+}
+.logo-nr-b4{
+     width: 380px;
+    height: 54px;
+    
+
+}
+.logo-nr-b4 a{
+
+}
+.logo-nr-b4 a button{
+    background-color:  #fd7400;
+    font-size: 20px;
+    width: 380px;
+    height: 54px;
+    line-height: 54px;
+
+}
+.logo-img{
+        /*float: left;*/
+    text-align: center;
+    width: 460px;
+}
+.logo-img a{
+        text-decoration: none;
+    color: #333;
+    outline: none;
+}
