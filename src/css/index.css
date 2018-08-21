@@ -1,0 +1,214 @@
+.banner{
+    height: 480px;
+}
+.silie{
+    height: 347px;
+    width: 100%;
+}
+.silie ul{}
+.silie ul li{
+    /*position: relative;*/
+    float: left;
+    /*display: inline;*/
+    width: 290px;
+    height: 320px;
+    margin: 0 0 10px 13px;
+}
+
+.wei{
+    /*display:block;*/
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+    /*left: 10px;*/
+/*    padding-top: 20px;
+    font-size: 14px;
+    right: 0;
+    width: 290px;
+    height: 104px;
+    line-height: 36px;
+    color: #575757;
+    text-align: center;*/
+}
+
+.hdbp{
+    height: 476px;
+}
+.hdbp-l ul li{
+    height: 228px;
+    width: 698px;
+    padding-bottom: 10px;
+}
+.hdbp-r-t{
+    width: 500px;
+    height: 68px;
+    background: #a1d22b;
+    text-align: center;
+}
+.dade{
+    width: 388px;
+    height: 388px;
+}
+.de li{
+    display:none;
+    height: 388px;
+}
+.dade .da li img{
+    width: 388px;
+    height: 388px;
+}
+.xiaode{
+    width: 108px;
+    height: 378px;
+}
+.xiaode .xiao li img{
+    width: 88px;
+    height: 88px;
+}
+
+.navList{
+    height: 240px;
+}
+.navList .container a img{
+    height: 240px;
+    width: 100%;
+}
+
+.fruits{
+    height: 534px;
+    width: 100%;
+}
+.fruits-l{
+    width: 365px;
+    height: 534px;
+}
+.fruits-l-t{
+    width: 356px;
+    height: 88px;
+    line-height: 88px;
+    color: #fff;
+    font-weight: bold;
+}
+.fruits-l-t a span{
+     line-height: 88px;
+    color: #ccc;
+    font-size: 18px;
+    padding-left: 100px;
+    width: 265px;
+}
+.fruits-r{
+    width: 840px;
+    height: 534px;
+}
+.fruits1{
+    width: 410px;
+    height: 534px;
+}
+.fruits1 ul li{
+    width: 410px;
+    height: 265px;
+}
+.fruits1 ul li a img{
+    width: 400px;
+    height: 250px;
+}
+.fruits-2{
+    width: 428px;
+    height: 534px;
+}
+.fruits-2 li{
+    float:left;
+    height: 265px;
+    width: 213px;
+    text-align: center;
+    /*position: relative;*/
+    /*overflow: hidden;*/
+}
+.fruits-2 li a{
+    display:block;
+    width: 180px;
+    height: 180px;
+}
+.fruits-2 li a img{
+    width: 180px;
+    height: 180px;
+}
+
+
+/**/
+.pulp{
+    height: 534px;
+    width: 100%;
+}
+.pulp-l{
+    width: 365px;
+    height: 534px;
+}
+.pulp-l-t{
+    width: 356px;
+    height: 88px;
+    line-height: 88px;
+    color: #fff;
+    font-weight: bold;
+}
+.pulp-l-t a span{
+     line-height: 88px;
+    color: #ccc;
+    font-size: 18px;
+    padding-left: 100px;
+    width: 265px;
+}
+.pulp-r{
+    width: 840px;
+    height: 534px;
+}
+.pulp-r ul{
+    width: 603px;
+    height: 534px;
+}
+.pulp ul li{
+    width: 198px;
+    height: 265px;
+    border:1px solid #ddd;
+    float:left;
+}
+/*.pulp ul li a{
+    width: 200px;
+    height: 265px;
+    border:1px solid #ddd;
+    float:left;
+}*/
+.pulp ul li a img{
+    width: 180px;
+    height: 180px;
+}
+.pulp-r-t{
+    width: 235px;
+    height: 517px;
+}
+.pulp-r-t ul{
+    width: 235px;
+    height: 517px;
+}
+.pulp-r-t ul li {
+    width: 235px;
+    height: 165px;
+}
+
+/**/
+.diqu{
+    height: 240px;
+}
+.diqu .container a img{
+    height: 240px;
+    width: 100%;
+}
+
+/**/
+.shenhuo{
+    height: 240px;
+
+}
+.shenhuo .container a img{
+    height: 240px;
+    width: 100%;
+}

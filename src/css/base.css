@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*css 初始化 */
+body{box-sizing: border-box;}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0; 
+}
+fieldset, img,input,button {
+    border: none; 
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { 
+    list-style: none; 
+}
+input { 
+    padding-top: 0; 
+    padding-bottom: 0; 
+    font-family: "SimSun", "宋体";
+}
+select, input { 
+    vertical-align: middle;
+}
+select, input, textarea { 
+    font-size: 12px; margin: 0; 
+}
+textarea { 
+    resize: none; 
+} /*防止拖动*/
+img {
+    border: 0; vertical-align: middle; 
+}  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { 
+    border-collapse: collapse;
+}
+body {
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+.clearfix:before, .clearfix:after {  /*清楚浮动*/
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix{
+    zoom:1;/*IE/7/6*/
+}
+a {
+    text-decoration: none; 
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类*/
+.container {  /*版心 提取 */
+    width: 1240px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.al {
+    text-align: left;
+}
+.ac {
+    text-align: center;  
+}
+.ar {
+    text-align: right;
+}
+.hide {
+    display: none;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1526804628499'); /* IE9*/
+  src: url('../font/iconfont.eot?t=1526804628499#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  
+  url('../font/iconfont.ttf?t=1526804628499') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg?t=1526804628499#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:12px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon:before { content: "\e602"; }
+
+.icon-xiasanjiao-copy:before { content: "\e604"; }
+
+.icon-hongxin:before { content: "\e501"; }
+
+.icon-lihe:before { content: "\e607"; }
+
+.icon-gouwuche1-copy:before { content: "\e503";}
+
+.icon-wenhao:before { content: "\e605"; }
+
+
+@font-face {font-family: "iconfont";
+  src: url('../font/font1/iconfont.eot?t=1524297046647'); /* IE9*/
+  src: url('../font/font1/iconfont.eot?t=1524297046647#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  
+  url('../font/font1/iconfont.ttf?t=1524297046647') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/font1/iconfont.svg?t=1524297046647#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:12px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jia:before { content: "\f018b"; }
+.icon-shouye:before { content: "\e619"; }
+.icon-jianshu:before { content: "\e63c"; }
+.icon-yousanjiao:before { content: "\e629"; }
+
+.icon-shangsheng:before { content: "\e750"; color:#FECA09;font-size:16px;}
+
+.icon-xiajiang:before { content: "\e755"; color:#FECA09;font-size:16px;}
+
+
+/*头部*/
+.box{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    height: 100%;
+}
+
+#top{
+    
+}
+.top-t{
+    height: 30px;
+    line-height: 30px;
+    background-color: #F7F7F7;
+}
+.top-t ul{}
+.top-t ul li{
+
+    float: left;
+}
+.top-t ul:nth-child(1) li{
+    padding:0 15px;
+}
+.top-t ul:nth-child(2)  li span{
+    padding:0 15px;
+    border-right: 1px solid #ccc;
+}
+.top-t ul:nth-child(2)  li:nth-child(4) span{
+    border:0;
+}
+
+.back{
+    height: 120px;
+    width: 100%;
+    background:url('../img/back1.png');
+}
+
+.headl{
+    height: 90px;
+    background-color: #E0E0E0;
+}
+.logo{
+    width: 294px;
+}
+.form{
+    width: 563px;
+}
+.ln{
+    margin-top:20px;
+}
+.ln input{
+    height: 32px;
+    width: 350px;
+    line-height: 32px;
+    border: 1px #fd7400 solid;
+    padding-left: 11px;
+}
+.ln button{
+    height: 34px;
+    line-height: 32px;
+    width: 70px;
+    background-color:#fd7400 ;
+    padding-top:0px;
+    margin-left: -3px;
+    padding-bottom: 5px;
+}
+.form ul{}
+.form ul li{
+    float:left;
+    padding:3px 5px;
+}
+.form ul li a{
+    color: #fd7400;
+}
+.top-cart{
+    margin-top: 15px;
+    width: 110px;
+    padding:5px 15px;
+    background-color: #fff;
+    border:1px solid #fd7400;
+}
+.top-cart span{
+
+}
+.top-cart span a{
+    float: right;
+    width: 110px;
+    padding-right: 5px;
+    color: #fd7400;
+    font-size: 14px;
+    text-align: center;
+/*    background: url(../images/list-arrow.png) no-repeat right 10px;*/
+    display: block;
+}
+
+.nav{
+    height: 40px;
+
+}
+.nav .nav-l{
+    margin-left: 10px;
+    width: 150px;
+    background: #fd7400;
+}
+.nav .nav-l h4 a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+}
+.nav-r{
+    margin-left: 30px;
+}
+.nav-r li{
+    float:left;
+
+}
+.nav .nav-r li a{
+    padding:0 30px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*底部*/
+
+
+

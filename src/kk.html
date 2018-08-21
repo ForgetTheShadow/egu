@@ -1,0 +1,370 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta property="qc:admins" content="253013015165753656375" />
+<meta property="wb:webmaster" content="9a919006a68fa161" />
+<meta content="text/html; charset=gbk" http-equiv="Content-Type" />
+<title>依谷网-专注于绿色生态农产品宅生活电商</title>
+<meta content="依谷、水果、进口水果、生鲜、蔬菜、肉类、禽蛋、网购、大闸蟹、礼品卡、礼盒、农产品、批发、绿色食品、健康" name="Keywords"/>
+<meta content="农产品购物网站,提供进口水果、礼盒以及水果团购服务以及新鲜、优质、高档、绿色、健康无公害等日常农副食品，倡导低碳生活，提升生活品质，保障食品安全" name="Description"/>
+
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/menu.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/pintuer.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/right_base.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/gift-card.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/eguUsers/js/layer/layer.js"></script>
+<script type="text/javascript" src="/static/script/top_menu.js"></script>
+<script type="text/javascript" src="/static/script/list_details_updown.js"></script>
+<script type="text/javascript" src="/static/script/index_banner.js"></script>
+<script type="text/javascript" src="/static/script/cardshopCart.js"></script>
+<script type="text/javascript" src="/static/script/qieh-lrtk.js"></script>
+<script type="text/javascript" src="/static/script/gift-card.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".pro-img").hover(function() {
+            $(this).find(".pro-img-wz").slideDown();
+        }, function() {
+            $(this).find(".pro-img-wz").slideUp();
+        });
+    });
+</script>
+</head>
+<body>
+    <div id="top">
+        <script type="text/javascript">
+            $('#top').load('/eguHead.action?id=1');
+        </script>
+    </div>
+    <div class="gift_banner_top index_banner_top margin-t-40"
+        style="position: relative;">
+        <ul class="index_banList">
+            <li class="active">
+                <a href="#"><img src="/static/images/gift-banner.jpg" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="/static/images/gift-banner-01.jpg" /></a>
+            </li>
+        </ul>
+        <div class="index_fomW">
+            <div class="index_jsNav">
+                <a href="javascript:;" class="trigger current"></a>
+                <a href="javascript:;" class="trigger"></a>
+            </div>
+        </div>
+        <div class="gift-banner-wz">
+            <div class="gift-card-banner-lf">
+                <p>卡券兑换</p>
+                <ul>
+                    <li>卡/券号</li>
+                    <li><input name="card_no" id="card_no" type="text" class="gift-card-banner-lf-k" placeholder="卡号"/></li>
+                    <li>密码</li>
+                    <li><input name="card_pwd" id="card_pwd" type="password" class="gift-card-banner-lf-k" placeholder="密码"/></li>
+                    <li></li>
+                    <li class="gift-card-banner-lf-k-a" onclick="exchange()"><a href="javascript:void(0)" class="text-white">立即兑换</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript">
+            $(function() {
+                $(".index_banner_top").swBanner();
+            });
+        </script>
+    <div id="index-content"
+        style="padding-bottom: 0px; margin-bottom: 0px;">
+        <div class="index-content">
+            <div class="gift-card">
+                <div class="card_menu">
+                    <div class="tab">
+                        <a href="javascript:;" class="on">谷&nbsp;穗&nbsp;卡</a> 
+                        <!-- <a href="javascript:;" class="card-position-01">主&nbsp;题&nbsp;卡</a> -->
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <div class="float-left w1208">
+                                    <em class="card_menu_arrow"><img src="/static/images/card_tck_arrowbt.png" /></em>
+                                </div>
+                                <div class="gsk_lf">
+                                    <img src="/static/images/gsk_dzk.jpg" width="500" height="450" />
+                                    <em class="float-left w10 color-abcd font-24 text-center padding-top padding-bottom">谷穗卡</em>
+                                </div>
+                                <div class="gsk_ri">
+                                    <div class="gsk_ri_title">依家谷穗卡</div>
+                                    <div class="gsk_ri_sm">说明：1.持卡客户注册成为依谷网会员，凭卡号、密码可兑换成金额充值到会员账户，账户余额
+                                        可在依谷网全城通用。购物更优惠、采购更方便；2.谷穗卡有效期1年。</div>
+                                    <div class="gsk_ri_line"></div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">样式</div>
+                                        <div class="gsk_ri_nr_ri kajys" id="types_0">
+                                            <div class="gsk_ri_nr_ri_xz_dq kajys_fl" onclick="selectItem(this,'gsk_ri_nr_ri_xz_dq kajys_fl','gsk_ri_nr_ri_xz kajys_fl')" id="0">
+                                                <a href="javascript:void(0)">实物卡</a>
+                                                <div class="kajys_xl">
+                                                    <div class="float-left w10">
+                                                        <div class="gsk_ri_nr_ri_top"><img src="static/images/arrow_top.png" /></div>
+                                                    </div>
+                                                    <div class="kajys_xl_nr">
+                                                        <a href="#nogo">下单后将为您配送实物谷穗卡，内含卡号密码。</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gsk_ri_nr_ri_xz kajys_fl"  onclick="selectItem(this,'gsk_ri_nr_ri_xz_dq kajys_fl','gsk_ri_nr_ri_xz kajys_fl')" id="1">
+                                                <a href="javascript:void(0)">电子卡</a>
+                                                <div class="kajys_xl">
+                                                    <div class="float-left w10">
+                                                        <div class="gsk_ri_nr_ri_top">
+                                                            <img src="static/images/arrow_top.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="kajys_xl_nr">
+                                                        <a href="#nogo">下单后将发送电子谷穗卡，内含卡号密码。</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">金额</div>
+                                        <div class="gsk_ri_nr_ri kajys" id="money">
+                                            <div class="gsk_ri_nr_ri_xz_dq" onclick="selectClick(this,0)">
+                                                <a href="javascript:void(0)">￥100</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,0)">
+                                                <a href="javascript:void(0)">￥200</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,0)">
+                                                <a href="javascript:void(0)">￥300</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,0)">
+                                                <a href="javascript:void(0)">￥500</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,0)">
+                                                <a href="javascript:void(0)">￥600</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz">
+                                                <input name="dynamic_price"  id ="dynamic_price" type="text" class="gsk_ri_nr_ri_xz_k" placeholder="自定义金额" onchange="checkDynamicPrice('dynamic_price')"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">数量</div>
+                                        <div class="gsk_ri_nr_ri kajys">
+                                            <div class="gift_jq">
+                                                <div class="gift_jq_jian">
+                                                    <a href="javascript:void(0)" onclick="delBuyNum()" class="font-24">-</a>
+                                                </div>
+                                                <div class="gift_jq_je">
+                                                    <input name="buy_num" type="text" class="gift_jq_k" value="1"
+                                                        placeholder="1" id="buy_num" onkeyup="checkIput('buy_num','sum_price')"/>
+                                                </div>
+                                                <div class="gift_jq_jian">
+                                                    <a href="javascript:void(0)" onclick="addBuyNum()" class="font-24">+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_line"></div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">总额</div>
+                                        <div class="gsk_ri_nr_ri kajys">
+                                            <div class="gsk_ri_nr_ri_xz_jq" id="sum_price">￥100</div>
+                                        </div>
+                                    </div>
+                                    <div class="float-left w10">
+                                        <button
+                                            class="bg-yellow text-white font-16 padding-big-left padding-big-right padding-t-5 padding-b-5 border-radius" onclick="buyNow()">立即购买</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="display:none;">
+                                <div class="float-left w1208">
+                                    <em class="card_menu_arrow_bt"> 
+                                        <img src="static/images/card_tck_arrowbt.png" />
+                                    </em>
+                                </div>
+                                <div class="gsk_lf">
+                                    <img src="static/images/gsk_lpk.jpg" width="500" height="450" />
+                                    <em class="float-left w10 color-abcd font-24 text-center padding-top padding-bottom">生日礼品卡</em>
+                                </div>
+                                <div class="gsk_ri">
+                                    <div class="gsk_ri_title">依家各式主题卡</div>
+                                    <div class="gsk_ri_sm">说明：1.持卡客户注册成为依谷网会员，凭卡号、密码可兑换成金额充值到会员账户，账户余额
+                                        可在依谷网全城通用。购物更优惠、采购更方便；2.主题卡有效期1年。</div>
+                                    <div class="gsk_ri_line"></div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">样式</div>
+                                        <div class="gsk_ri_nr_ri kajys" id="types_1">
+                                            <div class="gsk_ri_nr_ri_xz_dq kajys_fl" onclick="selectItem(this,'gsk_ri_nr_ri_xz_dq kajys_fl','gsk_ri_nr_ri_xz kajys_fl')" id="0">
+                                                <a href="javascript:void(0)">实物卡</a>
+                                                <div class="kajys_xl">
+                                                    <div class="float-left w10">
+                                                        <div class="gsk_ri_nr_ri_top">
+                                                            <img src="static/images/arrow_top.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="kajys_xl_nr">
+                                                        <a href="#nogo">下单后将为您配送实物谷穗卡，内含卡号密码。</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz kajys_fl" onclick="selectItem(this,'gsk_ri_nr_ri_xz_dq kajys_fl','gsk_ri_nr_ri_xz kajys_fl')" id="1">
+                                                <a href="javascript:void(0)">电子卡</a>
+                                                <div class="kajys_xl">
+                                                    <div class="float-left w10">
+                                                        <div class="gsk_ri_nr_ri_top">
+                                                            <img src="static/images/arrow_top.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="kajys_xl_nr">
+                                                        <a href="#nogo">下单后将为您配送实物谷穗卡，内含卡号密码。</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">主题</div>
+                                        <div class="gsk_ri_nr_ri kajys" id="topic_style">
+                                            <div class="gsk_ri_nr_ri_zt_dq" onclick="selectItem(this,'gsk_ri_nr_ri_zt_dq','gsk_ri_nr_ri_zt')" id="1">
+                                                <a href="javascript:void(0)">
+                                                    <img src="static/images/gift-card-zhuti01.jpg" />
+                                                </a>
+                                            </div>
+
+                                            <div class="gsk_ri_nr_ri_zt" onclick="selectItem(this,'gsk_ri_nr_ri_zt_dq','gsk_ri_nr_ri_zt')" id="2">
+                                                <a href="javascript:void(0)"">
+                                                    <img src="static/images/gift-card-zhuti02.jpg" />
+                                                </a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_zt" onclick="selectItem(this,'gsk_ri_nr_ri_zt_dq','gsk_ri_nr_ri_zt')" id="3">
+                                                <a href="javascript:void(0)"">
+                                                    <img src="static/images/gift-card-zhuti03.jpg" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">金额</div>
+                                        <div class="gsk_ri_nr_ri kajys" id="money1">
+                                            <div class="gsk_ri_nr_ri_xz_dq" onclick="selectClick(this,1)">
+                                                <a href="javascript:void(0)">￥100</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,1)">
+                                                <a href="javascript:void(0)">￥200</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,1)">
+                                                <a href="javascript:void(0)">￥300</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,1)">
+                                                <a href="javascript:void(0)">￥500</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz" onclick="selectClick(this,1)">
+                                                <a href="javascript:void(0)" >￥600</a>
+                                            </div>
+                                            <div class="gsk_ri_nr_ri_xz">
+                                                <input name="dynamic_price1"  id="dynamic_price1" type="text" class="gsk_ri_nr_ri_xz_k"
+                                                    placeholder="自定义金额"  onchange="checkDynamicPrice('dynamic_price1')"/>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">数量</div>
+                                        <div class="gsk_ri_nr_ri kajys">
+                                            <div class="gift_jq">
+                                                <div class="gift_jq_jian">
+                                                    <a href="javascript:void(0)" class="font-24" onclick="delTopicNum()" >-</a>
+                                                </div>
+                                                <div class="gift_jq_je">
+                                                    <input name="total_num"  id="total_num" type="text" class="gift_jq_k" value="1"
+                                                        placeholder="1" onkeyup="checkIput('total_num','total_price')"/>
+                                                </div>
+                                                <div class="gift_jq_jian">
+                                                    <a href="javascript:void(0)" class="font-24" onclick="addTopicNum()" >+</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gsk_ri_line"></div>
+
+                                    <div class="gsk_ri_nr">
+                                        <div class="gsk_ri_nr_lf">总额</div>
+                                        <div class="gsk_ri_nr_ri kajys">
+                                            <div class="gsk_ri_nr_ri_xz_jq" id="total_price">￥100</div>
+                                        </div>
+                                    </div>
+                                    <div class="float-left w10">
+                                        <button
+                                            class="bg-yellow text-white font-16 padding-big-left padding-big-right padding-t-5 padding-b-5 border-radius" onclick="buyTopicCard()">立即购买</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="float-left margin-big-top margin-big-bottom">
+                <a href="delivery.html"><img
+                    src="static/images/gift-cart-gg.jpg" /></a>
+            </div>
+            <div class="gift-card" id="gcard">
+                <script type="text/javascript">
+                    $('#gcard').load("/cardshow/showGiftCard.action?rd="+Math.random()*10000);
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="index-content">
+        <div class="index-content">
+            <div class="kalc">
+                <div class="tab">
+                    <a href="javascript:;" class="on">购买流程</a> <a href="javascript:;">兑换流程</a>
+                    <a href="javascript:;">购卡规则</a> <a href="javascript:;">常见问题</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="bg-fafaf8"><img
+                            src="/static/images/gift-card-dg.jpg" /></li>
+                        <li class="bg-fafaf8"><img
+                            src="/static/images/gift-card-dh.jpg" /></li>
+                        <li><b>购卡规则</b>
+                            <p>1、 依卡（以下称“依卡”）指由
+                                深圳依谷网电子商务有限公司（“本公司”）发行的，可以并仅限在www.egu365.com
+                                （“本网站”）上购买商品或服务的不记名预付卡。依卡面值均在人民币1,000元以下。依卡有电子卡和实体卡两种，包含谷穗卡、套餐卡、宅配卡、尊享卡等；</p>
+                            <p>2、 依卡有效期自卡生效之日起1年内有效，请务必在有效期内使用，可在有效期内多次使用，过期卡将失效；</p>
+                            <p>3、 成功兑换后，仅能在绑定账户使用，暂不支持跨帐户使用；</p>
+                            <p>4、 依卡可合并使用，支付金额不足部分可用其他支付方式支付不足；</p>
+                            <p>5、 礼品卡购买时已开具发票，礼品卡支付的部分不可再开发票；</p>
+                            <p>6、 订单退货、缺货，礼品卡支付金额将退回卡内；</p>
+                            <p>7、 礼品卡不记名、不挂失、不兑现现金、不退卡；</p>
+                            <p>8、 依谷网保留修改礼品卡使用规则、条款和使用条件的权利，所有规则、条款和条件将在法律允许的最大限度内适用 ；</p>
+                            <p>9、 如若有疑问可拨打免费热线：400-110-0755</p></li>
+                        <li><b>常见问题</b>
+                            <p class="color">问：电子卡和实体卡的区别 ？</p>
+                            <p>答：电子卡是虚拟的，卡号和密码是通过短信接收使用的；实体卡是实物，以一张卡片的形式，上面有卡号和密码。他们的使用方式是一样的。</p>
+                            <p class="color">问：电子卡发票什么时候能寄到？</p>
+                            <p>答：我们会在7个工作日内为您寄出，届时请注意查收。</p>
+                            <p class="color">问：使用依谷依卡购买实物时发票里怎么不是全部的商品金额？</p>
+                            <p>答：因为依谷依卡在销售时已开具发票给购买者，所以在购买商品时依谷依卡所支付金额不再开具发票。</p>
+                            <p class="color">问：我同时使用依谷依卡和现金付了款，退货的时候可以一起退现金给我吗？</p>
+                            <p>答：使用依卡购买的商品发生退货时，依卡所支付的金额会退回帐户余额，不能退现金。</p>
+                            <p class="color">问：我的依谷依卡怎么和网上的卡面不一样呢？</p>
+                            <p>答：您的卡可能是定制卡，定制卡的卡面个性化。</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <script type="text/javascript">
+            $('#bottom').load('/static/html/bottom.html');
+        </script>
+    </div>
+    <!--底部结束-->
+</body>
+</html>
