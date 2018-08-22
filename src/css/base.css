@@ -240,6 +240,7 @@ s, em {
 
 .nav{
     height: 40px;
+    border-bottom: 2px solid #121323;
 
 }
 .nav .nav-l{
@@ -303,9 +304,11 @@ s, em {
 
 .nav-r{
     margin-left: 30px;
+
 }
 .nav-r li{
     float:left;
+    border-right: 1px solid #fc0;
 
 }
 .nav .nav-r li a{
@@ -319,12 +322,14 @@ s, em {
 /*底部*/
 
 .buttom{
-
 }
 .buttom-t{
-    width: 100%;
-    margin: 0 auto;
+    margin-top: 20px;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
     background: #fd7400;
+    border:1px solid #000;
 }
 .buttom-t ul li{
     float: left;

@@ -1,57 +1,567 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Menu - Default functionality</title>
-  <link rel="stylesheet" type="text/css" href="../lib/jquery-ui-1.12.1/jquery-ui.css" />
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="../lib/jquery-ui-1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#menu" ).menu();
-  } );
-  </script>
-  <style>
-  .ui-menu { width: 150px; }
-  </style>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
 </head>
 <body>
- 
-<ul id="menu">
-  <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
-  <li><div>Books</div></li>
-  <li><div>Clothing</div></li>
-  <li><div>Electronics</div>
-    <ul>
-      <li class="ui-state-disabled"><div>Home Entertainment</div></li>
-      <li><div>Car Hifi</div></li>
-      <li><div>Utilities</div></li>
-    </ul>
-  </li>
-  <li><div>Movies</div></li>
-  <li><div>Music</div>
-    <ul>
-      <li><div>Rock</div>
-        <ul>
-          <li><div>Alternative</div></li>
-          <li><div>Classic</div></li>
-        </ul>
-      </li>
-      <li><div>Jazz</div>
-        <ul>
-          <li><div>Freejazz</div></li>
-          <li><div>Big Band</div></li>
-          <li><div>Modern</div></li>
-        </ul>
-      </li>
-      <li><div>Pop</div></li>
-    </ul>
-  </li>
-  <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
-</ul>
- 
- 
+    <div class="box">
+        <div class="container">
+               <!--头部  -->
+            <div id="top">  
+                <div class="top-t clearfix">
+                    <ul class="fl">
+                        <li>欢迎光临依谷网!</li>
+                        <li><i></i><a href="">收藏依谷网</a></li>
+                    </ul>
+                    <ul class="fr">
+                        <li>
+                            <span><a href="../html/enter.html">登录</a></span>
+                        </li>
+                        <li>
+                            <span><a href="../html/enroll.html">免费注册</a></span>
+                        </li>
+                        <li>
+                            <span><a href="cart.html">购物车</a></span>
+                        </li>
+                        <li>
+                            <span><i></i><a href="">关注依谷网</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="back"></div>
+            <div class="headl clearfix">
+                <div class="logo fl">
+                    <a href="">
+                        <img src="img/logo.png" height="66" width="254" alt="" />
+                    </a>
+                </div>
+                <div class="form fl">
+                    <div class="top_search">
+                        <div class="topseo">
+                            <div class="ln">
+                                <input type="text" placeholder="哈根达斯"/>
+                                <button>搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">大闸蟹</a>
+                        </li>
+                        <li>
+                            <a href="">中秋月饼</a>
+                        </li>
+                        <li>
+                            <a href="">新鲜湿核桃</a>
+                        </li>
+                        <li>
+                            <a href="">厨房用品</a>
+                        </li>
+                        <li>
+                            <a href="">七夕节鲜花</a>
+                        </li>
+                        <li>
+                            <a href="">进口红酒</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-cart fr">
+                    <i></i>
+                    <span>
+                        <a href="">立即去结算</a>
+                    </span>
+                </div>
+            </div>
+            <div class="nav clearfix">
+                <ul class="fl nav-l">
+                    <h4><a href="">全部商品分类</a></h4>
+                    <li>
+                        <a href="">水果蔬菜
+                            <div>    
+                                <ul>
+                                    <li>
+                                        <a href=""><span>国产水果</span></a>
+                                        <a href=""><span>苹果</span></a>
+                                        <a href=""><span>梨</span></a>
+                                        <a href=""><span>柑橙柚</span></a>
+                                        <a href=""><span>桃李杏</span></a>
+                                        <a href=""><span>瓜类</span></a>
+                                        <a href=""><span>热带水果</span></a>
+                                        <a href=""><span>富含维生素C</span></a>
+                                        <a href=""><span>其他</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>进口水果</span></a>
+                                        <a href=""><span>美国</span></a>
+                                        <a href=""><span>智利</span></a>
+                                        <a href=""><span>新西兰</span></a>
+                                        <a href=""><span>澳大利亚</span></a>
+                                        <a href=""><span>泰国</span></a>
+                                        <a href=""><span>越南</span></a>
+                                        <a href=""><span>其他</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>鲜鲜蔬菜</span></a>
+                                        <a href=""><span>叶菜</span></a>
+                                        <a href=""><span>根茎/瓜类</span></a>
+                                        <a href=""><span>蘑菇类</span></a>
+                                        <a href=""><span>茄果/豆类</span></a>
+                                        <a href=""><span>特色蔬菜</span></a>
+                                        <a href=""><span>豆制品</span></a>
+                                        <a href=""><span>其他蔬菜</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">肉禽蛋奶
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><span>无肉不欢</span></a>
+                                        <a href=""><span>进口肉类</span></a>
+                                        <a href=""><span>牛肉</span></a>
+                                        <a href=""><span>羊肉</span></a>
+                                        <a href=""><span>猪肉</span></a>
+                                        <a href=""><span>家禽</span></a>
+                                        <a href=""><span>其他</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>水产海鲜</span></a>
+                                        <a href=""><span>虾兵蟹将</span></a>
+                                        <a href=""><span>鲍参翅肚</span></a>
+                                        <a href=""><span>淡鱼海鱼</span></a>
+                                        <a href=""><span>珍品贝类</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>新鲜蛋品</span></a>
+                                        <a href=""><span>生态养殖蛋</span></a>
+                                        <a href=""><span>蛋制品</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>方便速食</span></a>
+                                        <a href=""><span>速食品</span></a>
+                                        <a href=""><span>手工面点</span></a>
+                                        <a href=""><span>丸子</span></a>
+                                        <a href=""><span>豆制品</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">粮油副食
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><span>干货特产</span></a>
+                                        <a href=""><span>都是干货</span></a>
+                                        <a href=""><span>山珍海味</span></a>
+                                        <a href=""><span>有啦食品</span></a>
+                                        <a href=""><span>其他特产</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>玉米杂粮</span></a>
+                                        <a href=""><span>五常稻花香</span></a>
+                                        <a href=""><span>大米</span></a>
+                                        <a href=""><span>五谷杂粮</span></a>
+                                        <a href=""><span>面/粉/及制品</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>健康食油</span></a>
+                                        <a href=""><span>花生油</span></a>
+                                        <a href=""><span>玉米油</span></a>
+                                        <a href=""><span>橄榄油</span></a>
+                                        <a href=""><span>山茶油</span></a>
+                                        <a href=""><span>调和油</span></a>
+                                        <a href=""><span>更多油类</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>五味生香</span></a>
+                                        <a href=""><span>调和品</span></a>
+                                        <a href=""><span>汤料/底料</span></a>
+                                        <a href=""><span>果酱</span></a>
+                                        <a href=""><span>沙拉酱</span></a>
+                                        <a href=""><span>辣椒酱</span></a>
+                                        <a href=""><span>其他酱料</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">零食酒饮
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><span>吃货精选</span></a>
+                                        <a href=""><span>进口零食</span></a>
+                                        <a href=""><span>坚果炒货</span></a>
+                                        <a href=""><span>果干蜜饯</span></a>
+                                        <a href=""><span>糕点饼干</span></a>
+                                        <a href=""><span>糖果巧克力</span></a>
+                                        <a href=""><span>膨化食品</span></a>
+                                        <a href=""><span>飘香肉搏</span></a>
+                                        <a href=""><span>海苔</span></a>
+                                        <a href=""><span>其他</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>冲调饮料</span></a>
+                                        <a href=""><span>咖啡</span></a>
+                                        <a href=""><span>饮料</span></a>
+                                        <a href=""><span>蜂蜜</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>茶香四溢</span></a>
+                                        <a href=""><span>大红袍</span></a>
+                                        <a href=""><span>普洱</span></a>
+                                        <a href=""><span>黑茶</span></a>
+                                        <a href=""><span>铁观音</span></a>
+                                        <a href=""><span>乌龙</span></a>
+                                        <a href=""><span>红茶</span></a>
+                                        <a href=""><span>绿茶</span></a>
+                                        <a href=""><span>白茶</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>美酒加量</span></a>
+                                        <a href=""><span>红酒</span></a>
+                                        <a href=""><span>啤酒</span></a>
+                                        <a href=""><span>洋酒</span></a>
+                                        <a href=""><span>白酒</span></a>
+                                        <a href=""><span>其他酒品</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">主题场景
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><span>心动时刻</span></a>
+                                        <a href=""><span>鲜花</span></a>
+                                        <a href=""><span>蛋糕</span></a>
+                                        <a href=""><span>巧克力</span></a>
+                                        <a href=""><span>红酒</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>新派料理</span></a>
+                                        <a href=""><span>慢享烘焙</span></a>
+                                        <a href=""><span>健身脂肪</span></a>
+                                        <a href=""><span>异国风味</span></a>
+                                        <a href=""><span>中华理疗</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>年节惊喜</span></a>
+                                        <a href=""><span>恭贺新禧</span></a>
+                                        <a href=""><span>正确邂逅</span></a>
+                                        <a href=""><span>端午安康</span></a>
+                                        <a href=""><span>花好月圆</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>家常宴客</span></a>
+                                        <a href=""><span>省心家宴</span></a>
+                                        <a href=""><span>烛光晚餐</span></a>
+                                        <a href=""><span>生日派对</span></a>
+                                        <a href=""><span>鲜辣火锅</span></a>
+                                        <a href=""><span>热情烧烤</span></a>
+                                        <a href=""><span>小菜一碟</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">这箱有礼
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href=""><span>走亲访友</span></a>
+                                        <a href=""><span>父母长辈</span></a>
+                                        <a href=""><span>同事好友</span></a>
+                                        <a href=""><span>情侣夫妻</span></a>
+                                        <a href=""><span>儿女小辈</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>情礼兼到</span></a>
+                                        <a href=""><span>拜年必备</span></a>
+                                        <a href=""><span>滋补养生</span></a>
+                                        <a href=""><span>粮油干货</span></a>
+                                        <a href=""><span>水果休息</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">生活用品
+                            <div>
+                                <ul>
+                                    <li> 
+                                        <a href=""><span>家居用品</span></a>
+                                        <a href=""><span>洗漱用品</span></a>
+                                        <a href=""><span>家用小电器</span></a>
+                                        <a href=""><span>床上用品</span></a>
+                                        <a href=""><span>其他用品</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>厨房用品</span></a>
+                                        <a href=""><span>烹饪锅具</span></a>
+                                        <a href=""><span>餐具杯具</span></a>
+                                        <a href=""><span>厨房小电器</span></a>
+                                        <a href=""><span>厨房配件</span></a>
+                                        <a href=""><span>其他用品</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+                <ul class="fl nav-r">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="">礼品卡卷</a></li>
+                    <li><a href="">安心宅配</a></li>
+                    <li><a href="">产地特色预定</a></li>
+                    <li><a href="">企业定制</a></li>
+                    <li><a href="">活动专区</a></li>
+                    <li><a href="">食尚咨询</a></li>
+                    <li><a href="">依谷扶贫</a></li>
+                </ul>
+            </div>
+              
+                <!-- 底部 -->
+            <div class="buttom clearfix">
+                <div class="buttom-t">
+                    <ul class="clearfix">
+                        <li>
+                            <i class="buttom-l"></i>
+                            <div class="buttom-r">
+                                <div class="but">次日到达</div>
+                                <span>当天16点前下单第二天送达</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="buttom-l"></i>
+                            <div class="buttom-r">
+                                <div class="but">货到付款</div>
+                                <span>货到网银多种支付</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="buttom-l"></i>
+                            <div class="buttom-r">
+                                <div class="but">冷链配送</div>
+                                <span>基地到餐桌全程冷链</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="buttom-l"></i>
+                            <div class="buttom-r">
+                                <div class="but">24小时退换货</div>
+                                <span>专业解答 为您解惑</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="buttom-l"></i>
+                            <div class="buttom-r">
+                                <div class="but">基地优选食材</div>
+                                <span>依谷更懂您的需求</span>
+                            </div>
+                        </li>                    
+                    </ul>
+                </div>
+                <div class="buttom-b12" class="clearfix">   
+                    <div class="buttom-b1 fl clearfix">
+                        <h3>依谷有话说：</h3>
+                        <div class="buttom-b1-l fl">
+                            <a href="">
+                                <img src="../img/images/1484587824775.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="buttom-b1-r fr">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <span>关于系统升级客户热线、物流配送暂停服务公告</span>
+                                    </a>
+                                    <p><a href="">尊敬的客户： 您好！为了能给客户带来更好的服务，依谷网将于3月11日—3月13日对网站系统进行设备检修和升级，期间客服热线、在线咨询及物流配送暂不提供服务，3月14日起恢复正常咨询及物流配送。给您带来不便敬请谅解，感谢您对依谷网的支持！</a></p>
+                                </li>
+                                 <li>
+                                    <a href="">
+                                        <span>关于客户热线4001100755暂停服务的通知</span>
+                                    </a>
+                                    <p><a href="">尊敬的依谷网客户：您好，值此新春佳节来临之际，为了不影响您正常购物，现将春节期间客服电话服务和放假时间事项公告如下：1、由于中国移动的基站设备故障正在维修，现4001100755客服电话暂时无法正常使用。2、放假时间：2月15日—2月23日。如有不便，敬请谅解。依谷网在此感谢您长久以来对我们的信任与支持。</a></p>
+                                </li>
+                                 <li>
+                                    <a href="">
+                                        <span>春节期间依谷网快递停发通知！</span>
+                                    </a>
+                                    <p><a href="">亲爱的谷东们：您好！由于临近年关以及大雪天气原因，快递已经开始停发部分省份的收件业务！我们将于2月5日停止广东省外的快递发货，2月10日停止广东省内的快递发货，2月15日停止深圳市的订单，超时订单将协调至年后配送2月23日恢复正常发货。</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="buttom-b2 fr">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="../img/images/index-about.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/images/index-commonweal.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/images/index-statement.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="../img/images/index-job.jpg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                </div>
+                <div class="buttom-b34">  
+                    <div class="buttom-b3 fl clearfix">
+                        <ul>
+                            <li>
+                                <span>购物指南</span>
+                            </li>
+                            <li>
+                                <a href="">会员注册</a>
+                            </li>
+                            <li>
+                                <a href="">套餐卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">谷烩卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">积分兑换</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>购物指南</span>
+                            </li>
+                            <li>
+                                <a href="">会员注册</a>
+                            </li>
+                            <li>
+                                <a href="">套餐卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">谷烩卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">积分兑换</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>购物指南</span>
+                            </li>
+                            <li>
+                                <a href="">会员注册</a>
+                            </li>
+                            <li>
+                                <a href="">套餐卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">谷烩卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">积分兑换</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>购物指南</span>
+                            </li>
+                            <li>
+                                <a href="">会员注册</a>
+                            </li>
+                            <li>
+                                <a href="">套餐卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">谷烩卡使用方法</a>
+                            </li>
+                            <li>
+                                <a href="">积分兑换</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="buttom-b4 fr">
+                        <ul>
+                            <li>
+                                <span>依谷微信</span>
+                                <img src="../img/images/index-bottom-ygw-wx.jpg" alt="" />
+                            </li>
+                            <li>
+                                <span>依谷APP</span>
+                                <img src="../img/images/index-bottom-ygw-app.jpg" alt="" />
+                            </li>
+                        </ul>
+                </div>
+                </div>
+                <div class="buttom-bb clearfix">
+                    <ul>
+                        <li><a href="">关于依谷</a></li>
+                        <li><a href="">加入依谷</a></li>
+                        <li><a href="">联系依谷</a></li>
+                        <li><a href="">免责声明</a></li>
+                        <li><a href="">友情链接</a></li>
+                        <li><a href="">依谷咨询</a></li>
+                        <li><a href="">网站地图</a></li>
+                        <li><a href="">客服在线</a></li>
+                    </ul>
+                    <div>
+
+                        <a href="">
+                            <img src="../img/images/dzswsfqy.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/dzswsfqy.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/kxwz.jpg" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/govIcon.gif" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/xfwq.jpg" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/zmpp.jpg" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="../img/images/dzswsfqy.png" alt="" />
+                        </a>
+                    </div>
+                    <span>Copyright © 2010-2018 所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</span><br />
+                    <span><a href="">粤ICP备11016505号-9</a>| All Rights Reserved 深圳依谷网版权所有 网络实名：<a href="">依谷网</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

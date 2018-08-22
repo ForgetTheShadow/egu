@@ -1,0 +1,51 @@
+       
+
+.goodslist ul{
+    margin-top: 20px;
+    /*list-style:none;padding:0;margin:0;*/
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+.goodslist li{
+/*display:inline-block;width:220px;border:1px solid #ddd;padding:10px;margin:10px;*/
+
+float: left;
+width: 224px;
+height: 350px;
+margin: 10px 11px 10px ;
+border:1px solid #ddd;
+}
+
+/*.goodslist li:hover{
+    background-color:#efefef;
+}
+*/
+
+.goodslist li img{
+    width:220px;
+    height: 220px;
+}
+
+.goodslist .price{
+    color:#f00;font-weight:bold;
+}
+
+
+.goodslist .price::before{
+content:"￥";
+}
+
+.add2cart{
+        font-size: 14px;
+    color: #fff;
+    /*text-decoration: none;*/
+    /*position: absolute;*/
+    /*top: 305px;*/
+    /*left: 45px;*/
+    /*background: #fd7400;*/
+    border-radius: 4px;
+    padding: 8px 20px;
+}
