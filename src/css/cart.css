@@ -1,6 +1,44 @@
-/* 
-* @Author: Marte
-* @Date:   2018-08-22 09:43:33
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-08-22 09:43:35
-*/
+.cart{
+    padding:20px 5px;
+}
+#carList{
+    /*padding:20px;*/
+}
+#carList ul{
+    /*padding:20px;*/
+    overflow:hidden;
+    text-align: center;
+}
+#carList li{
+    float: left;
+width: 224px;
+height: 300px;
+margin: 10px 11px 10px ;
+border:1px solid #ddd;
+position:relative;
+padding-bottom:15px;
+margin-bottom:15px;
+border-bottom:1px solid #ddd;
+}
+#carList a img{
+   width: 200px;
+   height: 200px;
+}
+#carList li h4{
+    font-size:20px;
+}
+
+#carList li .btn-close{
+    position:absolute;top:0;right:0;padding:0 5px;cursor:default;
+}
+#carList li .btn-close:hover{
+    background-color:#f00;color:#fff;
+}
+.subPrice{
+    padding:5px 20px;color:#f00;font-weight:bold;text-align:right;
+}
+#carList .price{}
+#carList .price span{color:#f00;}
+.price span::before,.subPrice::before{
+    content:'￥';
+}

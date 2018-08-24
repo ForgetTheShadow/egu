@@ -35,10 +35,9 @@ border:1px solid #ddd;
 
 
 .goodslist .price::before{
-content:"￥";
+content:'￥';
 }
-
-.add2cart{
+ button{
         font-size: 14px;
     color: #fff;
     /*text-decoration: none;*/

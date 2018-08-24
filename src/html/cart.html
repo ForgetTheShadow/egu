@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/cart.css" />
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/cart.js"></script>
 </head>
 <body>
     <div class="box">
@@ -36,7 +38,7 @@
             <div class="headl clearfix">
                 <div class="logo fl">
                     <a href="">
-                        <img src="img/logo.png" height="66" width="254" alt="" />
+                        <img src="../img/logo.png" height="66" width="254" alt="" />
                     </a>
                 </div>
                 <div class="form fl">
@@ -342,9 +344,9 @@
             </div>
             
             <div class="cart">
-                <div class="cart-nr">
-                    
-                </div>
+                <div id="carList"></div>
+                <div class="subPrice"></div>
+                <a href="#" id="btnClear">清空购物车</a>
             </div>
 
                 <!-- 底部 -->

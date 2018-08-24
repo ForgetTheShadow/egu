@@ -18,6 +18,7 @@
     
     for($i=1;$i<30;$i++){
         $goods = array(
+            'guid' => 'g00'.$i,
             'name' => '商品' . $i,
             'price' => $price[array_rand($price)],
             'imgurl' => "../img/tu/shuiguo$i.jpg"

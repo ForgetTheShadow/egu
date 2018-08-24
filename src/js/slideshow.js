@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
-            
+
+            var banner = document.querySelector('.banner');            
              var Carousel = function(options){
                 // 属性
                 // 默认值
