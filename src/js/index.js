@@ -1,77 +1,102 @@
 document.addEventListener('DOMContentLoaded',function(){
+
+        // let items = picList.children;
+        
         let picList = document.querySelector('.picList');
+        let col = document.querySelector('.col');
+        let girl = col.children[1].children[0];
 
-        let items = picList.children;
+            let timer
 
-        // 定时器建议与节点关联
-        // let timer
 
-        // 遍历实现鼠标移入移出效果
-        for(var i=0;i<items.length;i++){
-            items[i].onmouseover = function(){
-                console.log(111);
-                clearInterval(this.timer);
+            girl.onmouseover = ()=>{
 
-                // 获取对应a标签
-                let link = this.children[1];
 
-                this.timer = setInterval(()=>{
-                    
-                 // add() : 添加class方法
-                    link.add('active');
-                },30)
+                // 鼠标移出时，清除mouseout的定时器
+                clearInterval(timer);
 
-                // // 目标值
-                // let target = 5;
 
-                // this.timer = setInterval(()=>{
-                //     // 获取当前值
-                //     let top = link.offsetTop;
+                // 目标值
+                let target = 1;
 
-                //     // 计算缓冲速度
-                //     let speed = Math.floor((target - top)/10);
+                timer = setInterval(()=>{
+                    // 获取当前值
+                    let opacity = getComputedStyle(girl).opacity*1;
 
-                //     top += speed;
+                    // 计算缓冲速度
+                    let speed = (target-opacity)/10;
 
-                //     if(top <= target){
-                //         clearInterval(this.timer);
+                    // 限定最小速度
+                    speed = speed<0.05 ? 0.05 : speed.toFixed(2)*1;
 
-                //         // 重置目标值
-                //         top = target;
-                //     }
+                    opacity += speed;
 
-                //     link.style.top = top + 'px';
-                // },30)
+                    // 结束判断
+                    if(opacity>=target){
+                        clearInterval(timer);
+                        opacity = target;
+                    }
+
+                    girl.style.opacity = opacity;
+
+                },30);
+            }
+
+            girl.onmouseout = ()=>{
+                // 鼠标移出时，清除mouseover的定时器
+                clearInterval(timer);
+
+                // 目标值
+                let target = 0;
+
+                timer = setInterval(()=>{
+                    // 获取当前值
+                    let opacity = getComputedStyle(girl).opacity*1;
+
+                    // 计算缓冲速度
+                    let speed = (target-opacity)/10;
+
+                    // 限定最小速度
+                    speed = speed>-0.05 ? -0.05 : speed.toFixed(2)*1;
+
+                    opacity += speed;
+
+                    // 结束判断
+                    if(opacity<=target){
+                        clearInterval(timer);
+                        opacity = target;
+                    }
+
+                    girl.style.opacity = opacity;
+
+                },30);
             }
 
 
-        //     items[i].onmouseout = function(){
-        //         clearInterval(this.timer);
 
-        //         // 获取对应a标签
-        //         let link = this.children[1];
+            let toTop = document.querySelector('.toTop');
 
-        //         // 目标值
-        //         let target = 160;
+            // 滚动到一定距离，显示返回顶部效果
+            window.onscroll = ()=>{
+                if(window.scrollY > 800){
+                    toTop.style.display = 'block';
+                }else{
+                    toTop.style.display = 'none';
+                }
+            }
 
-        //         this.timer = setInterval(()=>{
-        //             // 获取当前值
-        //             let top = link.offsetTop;
+            // 点击返回顶部
+            toTop.onclick = ()=>{
+                let timer = setInterval(()=>{
+                    // 计算缓冲速度
+                    let speed = Math.ceil(window.scrollY/5);//1
 
-        //             // 计算缓冲速度
-        //             let speed = Math.ceil((target - top)/10);
+                    scrollBy(0,-speed);
 
-        //             top += speed;
 
-        //             if(top >= target){
-        //                 clearInterval(this.timer);
-
-        //                 // 重置目标值
-        //                 top = target;
-        //             }
-
-        //             link.style.top = top + 'px';
-        //         },30)
-        //     }
-        }
+                    if(window.scrollY <= 0){
+                        clearInterval(timer);
+                    }
+                },30)
+            }
      });

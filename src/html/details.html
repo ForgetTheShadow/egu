@@ -5,9 +5,18 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/details.css" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/slideshow.js"></script>
+
+    <!-- 3.引入相关文件：样式 -->
+    <link rel="stylesheet" href="../lib/jquery-lxzoom/jquery.lxzoom.css">
+    <link rel="stylesheet" type="text/css" href="../api/jquery-lxzoom/jquery.lxzoom.css" />
+
+    <!-- 1.引入jquery -->
+    <script src="../js/jquery-3.3.1.js"></script>
+
+    <!-- 2.引入插入 -->
+    <script src="../api/jquery-lxzoom/jquery.lxzoom.js"></script>
+    <script type="text/javascript" src="../js/details.js"></script>
+
 </head>
 <body>
     <div class="box">
@@ -39,7 +48,7 @@
             <div class="headl clearfix">
                 <div class="logo fl">
                     <a href="">
-                        <img src="img/logo.png" height="66" width="254" alt="" />
+                        <img src="../img/logo.png" height="66" width="254" alt="" />
                     </a>
                 </div>
                 <div class="form fl">
@@ -75,7 +84,7 @@
                 <div class="top-cart fr">
                     <i></i>
                     <span>
-                        <a href="">立即去结算</a>
+                        <a href="cart.html">立即去结算</a>
                     </span>
                 </div>
             </div>
@@ -343,12 +352,15 @@
                     <li><a href="">依谷扶贫</a></li>
                 </ul>
             </div>
-            <div class="banner"></div>
+            <div class="banner2"></div>
               <!-- 详情页 -->
             <div class="details">
-                <p>新鲜水果 &gt; 水果 &gt; 国产水果 &gt; 苹果 &gt; <span>山东红富士苹果</span></p>
-                <div class="details-t">
-                    <div class="details-t-l">
+                <div class="details-t1">   
+                    <p>新鲜水果 &gt; 水果 &gt; 国产水果 &gt; 苹果 &gt; <span>山东红富士苹果</span></p>
+                </div>
+                <div class="details-t clearfix">
+                    <div class="details-t-l fl">
+
                         <div class="goods">
                             <img src="../img/tu/shuiguo10.jpg" data-big="../img/tu/shuiguo10.jpg">
                         </div>
@@ -358,8 +370,9 @@
                             <img src="../img/tu/shuiguo6.jpg"  data-big="../img/tu/shuiguo6.jpg">
                             <img src="../img/tu/shuiguo22.jpg" height="800" width="800" data-big="../img/tu/shuiguo22.jpg">          
                         </div>
+
                     </div>
-                    <div class="details-t-r">
+                    <div class="details-t-r fr">
                         <div class="details-b1">
                             <h2>山东红富士苹果80#15kg</h2>
                             <p>高端大果 单果约重200-250g 口感香脆爽 核小肉多</p>
@@ -390,7 +403,7 @@
                                 <label for="">规格：</label>
                                 <input type="text" value="连箱重约15kg（约56个）/份" />
                                 <label for=""></label>
-                                <input type="numder" min="1"/>
+                                <input type="numder" />
                             </div>
                         </div>
                     </div>

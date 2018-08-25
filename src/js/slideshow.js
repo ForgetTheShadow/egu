@@ -195,4 +195,5 @@ document.addEventListener('DOMContentLoaded',()=>{
                 height:480,
                 imgs:["img/b1.jpg","img/b2.jpg","img/b3.png","img/b4.png"]
              })
+             
         });

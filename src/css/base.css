@@ -141,6 +141,15 @@ s, em {
 .icon-xiajiang:before { content: "\e755"; color:#FECA09;font-size:16px;}
 
 
+/*回顶*/
+.toTop{
+    display:none;
+    position: fixed;
+    right:20px;bottom:20px;
+    padding:15px;
+    background-color: #58bc58;
+    color:#fff;
+}
 /*头部*/
 .box{
     width: 100%;

@@ -1,6 +1,58 @@
-/* 
-* @Author: Marte
-* @Date:   2018-08-22 09:43:50
-* @Last Modified by:   Marte
-* @Last Modified time: 2018-08-22 09:43:51
-*/
+
+.details{
+
+}
+.details-t1{
+    width: 980px;
+    margin: 20px 0px 0px 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.goods{
+    width: 485px;
+    height: 485px;
+}
+.goods img {
+    width: 100%;
+    height: 100%;
+}
+.small{
+        width: 450px;
+    height: 92px;
+    /*overflow: hidden;*/
+}
+.small img{
+        padding: 2px 2px 2px 3px;
+    width: 80px;
+    height: 80px;
+}
+.details-t{
+    width: 1016px;
+    padding-bottom: 20px;
+}
+.details-t-r{
+    width: 500px;
+    color: #777;
+    font-size: 12px;
+    padding: 5px 0px 0px 0px;
+}
+.details-b1 h2{
+        font-size: 18px;
+    font-weight: bold;
+}
+.details-b1 p{
+        width: 500px;
+    color: #777;
+    font-size: 12px;
+    padding: 5px 0px 0px 0px;
+}
+.details-b2{
+         width: 480px; 
+     background: #fdf8f4; 
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 0px 0px;
+}
+.details-b4 input{
+    border:1px solid #ccc;
+}

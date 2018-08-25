@@ -1,11 +1,11 @@
  document.addEventListener('DOMContentLoaded',()=>{
 
     var oCarList = document.getElementById('carList');
+    console.log(oCarList)
         var oSubPrice = oCarList.nextElementSibling;
         var btnClear = document.getElementById('btnClear');
 
         var goods = Cookie.get('goods');//'[{}]',''
-
         if(goods.length<=0){
             goods = [];
         }else{
@@ -38,16 +38,16 @@
         // * 找出删除的商品 -> 从数组中移除 -> 重写cookie -> 渲染页面
         oCarList.onclick = function(e){
             e = e || window.event;
-
             var target = e.target || e.srcElement;
 
             // 判断是否点击了按钮
             if(target.className === 'btn-close'){
                 // 获取当前li
                 var currentLi = target.parentNode;
-
+                console.log(currentLi)
                 // 获取当前商品的guid
-                var guid = currentLi.getAttribute('data-guid');
+                var guid = currentLi.getAttribute('guid');
+                console.log(guid)
 
                 // 找出数组中对应商品并移除
                 for(var i=0;i<goods.length;i++){
