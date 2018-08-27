@@ -56,3 +56,26 @@
 .details-b4 input{
     border:1px solid #ccc;
 }
+
+
+.tab{
+    width: 980px;
+    border:2px solid #ddd;padding:2px;
+}
+.tab header{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e8e8e8;
+    border-bottom: 3px solid #e8e8e8;
+    overflow:hidden;
+}
+.tab header div{
+     height: 40px;
+       float: left;
+    color: #000;
+    height: 40px;
+    text-align: center;
+    width: 125px;
+}
+.tab .active{background-color: #fc0;color:#fff;}
+.tab .content{padding:15px;min-height: 2460px;}

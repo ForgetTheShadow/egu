@@ -99,4 +99,20 @@ document.addEventListener('DOMContentLoaded',function(){
                     }
                 },30)
             }
+
+            var headl = document.querySelector('.headl');
+            var back = document.querySelector('.back');
+
+            window.onscroll = function(){
+                var scrollY = window.scrollY;
+
+                if(scrollY >= back.offsetHeight){
+                    headl.className = 'headl fixed';
+
+                    back.className = 'back  mgb';
+                }else{
+                    headl.className = 'headl';
+                    back.className = 'back';
+                }
+            }
      });

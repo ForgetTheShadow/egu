@@ -77,7 +77,8 @@
 
                         // 判断是否点击了添加购物车按钮
                         if(target.className === 'add2cart'){
-                            console.log(111)
+                            
+                            console.log(target)
                             // 获取当前li
                             var currentLi = target.parentNode;
                             var guid = currentLi.getAttribute('data-guid');

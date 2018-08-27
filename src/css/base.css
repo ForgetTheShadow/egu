@@ -188,7 +188,8 @@ s, em {
     width: 100%;
     background:url('../img/back1.png');
 }
-
+.fixed{position: fixed;left:0;top:0;right:0;}
+.mgb{margin-bottom:150px;}
 .headl{
     height: 90px;
     background-color: #E0E0E0;
